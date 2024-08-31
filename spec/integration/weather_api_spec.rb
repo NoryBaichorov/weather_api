@@ -1,9 +1,12 @@
 # frozen_string_literal: true
 
 require 'vcr'
+require 'webmock'
 require 'rails_helper'
 
 RSpec.describe WeatherAPI, type: :request do
+  WebMock.allow_net_connect!
+
   def app
     Rails.application
   end

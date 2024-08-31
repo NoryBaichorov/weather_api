@@ -2,7 +2,7 @@
 
 class GetWeatherData
   LOCATION_KEY = '328328' # London
-  API_KEY = 'sAFC1VKL7m1IcSZrKCQhboOyQIaiI4wv'
+  API_KEY = '7RbhQXYB6cLYiB0Y2wvxSZZmZgCujUD1'
   BASE_URL = 'https://dataservice.accuweather.com'
 
   def self.current_temperature

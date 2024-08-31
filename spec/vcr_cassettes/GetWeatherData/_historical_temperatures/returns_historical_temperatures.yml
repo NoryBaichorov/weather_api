@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 31 Aug 2024 19:03:13 GMT
+      - Sat, 31 Aug 2024 19:01:09 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -31,7 +31,7 @@ http_interactions:
       Ratelimit-Limit:
       - '50'
       Ratelimit-Remaining:
-      - '47'
+      - '49'
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Credentials:
@@ -45,11 +45,11 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Cache-Control:
-      - public, max-age=499
+      - public, max-age=557
       Expires:
-      - Sat, 31 Aug 2024 19:11:32 GMT
+      - Sat, 31 Aug 2024 19:10:26 GMT
       Akamai-Grn:
-      - 0.107c3a17.1725130993.1a415d9d
+      - 0.137c3a17.1725130869.1b3179a2
       Accept:
       - "*/*"
       Accept-Encoding:
@@ -82,5 +82,5 @@ http_interactions:
         cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":17.1,"Unit":"C","UnitType":17},"Imperial":{"Value":63.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-30T20:57:00+01:00","EpochTime":1725047820,"WeatherText":"Partly
         cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":17.9,"Unit":"C","UnitType":17},"Imperial":{"Value":64.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-30T20:02:00+01:00","EpochTime":1725044520,"WeatherText":"Mostly
         cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":18.8,"Unit":"C","UnitType":17},"Imperial":{"Value":66.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"}]'
-  recorded_at: Sat, 31 Aug 2024 19:03:14 GMT
+  recorded_at: Sat, 31 Aug 2024 19:01:10 GMT
 recorded_with: VCR 6.3.1
