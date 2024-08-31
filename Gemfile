@@ -18,15 +18,17 @@ gem "bootsnap", require: false
 # Supporting gems
 gem 'delayed_job_active_record'
 gem 'rufus-scheduler'
-gem 'grape'
 gem 'vcr'
 gem 'httparty'
-gem 'trailblazer-rails'
-gem 'swagger-blocks'
+
+gem 'grape'
+gem 'grape-swagger'
+gem 'grape-swagger-rails'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
   gem 'rspec-rails', '~> 6.1.0'
+  gem 'webmock'
 end
 
 group :development do; end

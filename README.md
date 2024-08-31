@@ -1,24 +1,45 @@
-# README
+# Weather API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+This project is an API created using Ruby on Rails. API documentation is available in Swagger JSON format. By default, it shows the time and temperature in London.
+***
+## Setup
 
-* Ruby version
+Clone the repository:
 
-* System dependencies
+``` bash
+git clone https://github.com/NoryBaichorov/weather_api.git
+ cd weather_api
+```
+Then run:
+```
+bundle install
+```
+And then:
+```
+bin/rails server
+```
+## Description
 
-* Configuration
+You can get:
+* `http://localhost:3000/weather/current` - shows current weather.
+* `http://localhost:3000/weather/historical` - shows the weather for the last 24 hours.
+* `http://localhost:3000/weather/historical/max` - shows the hottest temperature and time in the last 24 hours.
+* `http://localhost:3000/weather/historical/min` - shows the coldest temperature and time in the last 24 hours.
+* `http://localhost:3000/weather/historical/avg`- shows the average temperature and time in the last 24 hours.
+* `http://localhost:3000/weather/health` - an auxiliary request. Shows the response from the server - OK. This request is needed to check the server activity.
+* `http://localhost:3000/swagger_doc` - shows the documentation.
+## Optionally
+You can run:
+```
+bundle exec rspec
+```
+to run integration tests on all endpoints.
 
-* Database creation
+## Support
+If you have any questions or problems, please create an issue in the repository or contact us by email <nory.baichorov@gmail.com>
 
-* Database initialization
+## License
 
-* How to run the test suite
+This project is licensed under the [MIT License](https://gem-chat.hf.space/LICENSE)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
