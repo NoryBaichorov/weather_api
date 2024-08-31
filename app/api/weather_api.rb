@@ -2,12 +2,9 @@
 
 require 'time'
 require 'grape'
-require_relative '../../lib/array_extensions'
 require_relative '../services/get_weather_data'
 
 class WeatherAPI < Grape::API
-  include ArrayExtensions
-  
   format :json
 
   resource :weather do
@@ -16,7 +13,7 @@ class WeatherAPI < Grape::API
     end
 
     get '/historical' do
-      GetWeatherData.parse_and_sort_historical_data.to_json
+      GetWeatherData.parse_and_sort_historical_data
     end
 
     get '/historical/max' do
@@ -38,13 +35,33 @@ class WeatherAPI < Grape::API
     get '/historical/avg' do
       data = GetWeatherData.parse_and_sort_historical_data
       
-      entry = data.avg_by { |entry| entry[:temperature] }
+      entry = data.sum { |entry| entry[:temperature] }
       
-      { average_temperature: { time: entry[:time], temperature: entry[:temperature] } }
+      avg_temperature = entry / data.size.to_f
+      
+      { average_temperature: avg_temperature }
     end
 
     get '/by_time' do
-      # Логика для получения температуры по timestamp
+      time = params['time'].to_i
+      data = GetWeatherData.parse_and_sort_historical_data
+
+      # Преобразуем timestamp в объект времени
+      target_time = Time.at(time)
+
+      # Находим запись с ближайшим временем
+      closest_entry = data.min_by do |entry|
+        (Time.parse(entry[:time]) - target_time).abs
+      end
+
+      # Проверяем, совпадает ли время
+      closest_time = Time.parse(closest_entry[:time])
+
+      if closest_time
+        { temperature: closest_entry[:temperature] }
+      else
+        { error: "Temperature for the given timestamp not found", status: 404 }
+      end
     end
 
     get '/health' do

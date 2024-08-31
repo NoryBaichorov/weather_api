@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dataservice.accuweather.com/currentconditions/v1/328328/historical/24?apikey=sAFC1VKL7m1IcSZrKCQhboOyQIaiI4wv
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 31 Aug 2024 17:31:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '11832'
+      Connection:
+      - keep-alive
+      Request-Context:
+      - appId=cid-v1:0158d69b-75d9-4a19-9e5f-a14693f847e4
+      Ratelimit-Limit:
+      - '50'
+      Ratelimit-Remaining:
+      - '10'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Max-Age:
+      - '3628800'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=47
+      Expires:
+      - Sat, 31 Aug 2024 17:32:11 GMT
+      Akamai-Grn:
+      - 0.077c3a17.1725125484.1df5a0f0
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - deflate;q=0.6
+      - gzip;q=1.0
+      - identity;q=0.3
+      Host:
+      - api.accuweather.com
+      User-Agent:
+      - Ruby
+      X-Forwarded-For:
+      - 178.34.162.0
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+    body:
+      encoding: UTF-8
+      string: '[{"LocalObservationDateTime":"2024-08-31T18:02:00+01:00","EpochTime":1725123720,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":18.7,"Unit":"C","UnitType":17},"Imperial":{"Value":66.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T16:57:00+01:00","EpochTime":1725119820,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":18.9,"Unit":"C","UnitType":17},"Imperial":{"Value":66.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T16:02:00+01:00","EpochTime":1725116520,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":19.1,"Unit":"C","UnitType":17},"Imperial":{"Value":66.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T15:02:00+01:00","EpochTime":1725112920,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":19.4,"Unit":"C","UnitType":17},"Imperial":{"Value":67.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T14:02:00+01:00","EpochTime":1725109320,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":21.0,"Unit":"C","UnitType":17},"Imperial":{"Value":70.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T13:02:00+01:00","EpochTime":1725105720,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":20.7,"Unit":"C","UnitType":17},"Imperial":{"Value":69.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T11:57:00+01:00","EpochTime":1725101820,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":19.6,"Unit":"C","UnitType":17},"Imperial":{"Value":67.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T10:57:00+01:00","EpochTime":1725098220,"WeatherText":"Mostly
+        cloudy","WeatherIcon":6,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":17.5,"Unit":"C","UnitType":17},"Imperial":{"Value":64.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T10:02:00+01:00","EpochTime":1725094920,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":18.4,"Unit":"C","UnitType":17},"Imperial":{"Value":65.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T08:58:00+01:00","EpochTime":1725091080,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":16.6,"Unit":"C","UnitType":17},"Imperial":{"Value":62.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T08:02:00+01:00","EpochTime":1725087720,"WeatherText":"Mostly
+        cloudy","WeatherIcon":6,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":16.0,"Unit":"C","UnitType":17},"Imperial":{"Value":61.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T07:02:00+01:00","EpochTime":1725084120,"WeatherText":"Mostly
+        cloudy","WeatherIcon":6,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":15.0,"Unit":"C","UnitType":17},"Imperial":{"Value":59.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T06:02:00+01:00","EpochTime":1725080520,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":13.5,"Unit":"C","UnitType":17},"Imperial":{"Value":56.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T05:02:00+01:00","EpochTime":1725076920,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":14.1,"Unit":"C","UnitType":17},"Imperial":{"Value":57.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T03:57:00+01:00","EpochTime":1725073020,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":15.0,"Unit":"C","UnitType":17},"Imperial":{"Value":59.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T03:02:00+01:00","EpochTime":1725069720,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":14.4,"Unit":"C","UnitType":17},"Imperial":{"Value":58.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T02:02:00+01:00","EpochTime":1725066120,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":14.9,"Unit":"C","UnitType":17},"Imperial":{"Value":59.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T00:57:00+01:00","EpochTime":1725062220,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":15.0,"Unit":"C","UnitType":17},"Imperial":{"Value":59.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-31T00:02:00+01:00","EpochTime":1725058920,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":15.8,"Unit":"C","UnitType":17},"Imperial":{"Value":60.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-30T23:01:00+01:00","EpochTime":1725055260,"WeatherText":"Partly
+        cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":16.4,"Unit":"C","UnitType":17},"Imperial":{"Value":61.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-30T22:02:00+01:00","EpochTime":1725051720,"WeatherText":"Partly
+        cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":17.1,"Unit":"C","UnitType":17},"Imperial":{"Value":63.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-30T20:57:00+01:00","EpochTime":1725047820,"WeatherText":"Partly
+        cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":17.9,"Unit":"C","UnitType":17},"Imperial":{"Value":64.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-30T20:02:00+01:00","EpochTime":1725044520,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":18.8,"Unit":"C","UnitType":17},"Imperial":{"Value":66.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"},{"LocalObservationDateTime":"2024-08-30T19:02:00+01:00","EpochTime":1725040920,"WeatherText":"Mostly
+        cloudy","WeatherIcon":6,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":19.9,"Unit":"C","UnitType":17},"Imperial":{"Value":68.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us","Link":"http://www.accuweather.com/en/gb/london/ec4a-2/current-weather/328328?lang=en-us"}]'
+  recorded_at: Sat, 31 Aug 2024 17:31:25 GMT
+recorded_with: VCR 6.3.1

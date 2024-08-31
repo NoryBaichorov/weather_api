@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
-require 'rack/test'
 require 'vcr'
+require 'rack/test'
+require 'grape-swagger'
 require 'webmock/rspec'
 
 RSpec.configure do |config|
@@ -12,4 +13,5 @@ VCR.configure do |c|
   c.cassette_library_dir = 'spec/vcr_cassettes'
   c.hook_into :webmock
   c.configure_rspec_metadata!
+  c.default_cassette_options = { record: :new_episodes }
 end

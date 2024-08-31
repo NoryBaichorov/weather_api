@@ -2,7 +2,7 @@
 
 class GetWeatherData
   LOCATION_KEY = '328328' # London
-  API_KEY = 'OytuPRASa9u0Yii1pJ2gAZcF2vKpy4lY'
+  API_KEY = 'sAFC1VKL7m1IcSZrKCQhboOyQIaiI4wv'
   BASE_URL = 'https://dataservice.accuweather.com'
 
   def self.current_temperature
@@ -23,18 +23,19 @@ class GetWeatherData
 
   def self.parse_and_sort_historical_data
     response = GetWeatherData.historical_temperatures
-    required_data = []
-    puts response.inspect  
+
+    final_hash = []
+
     response.each do |res|
       parsed_data = Time.parse(res['LocalObservationDateTime']).strftime('%I:%M')
         
-      required_data << {
+      final_hash << {
         time: parsed_data,
         temperature: res['Temperature']['Metric']['Value']
       }
     end
 
-    sorted_required_data = required_data.sort_by { |entry| entry[:time] }
-    sorted_required_data
+    sorted_final_hash = final_hash.sort_by { |entry| entry[:time] }
+    sorted_final_hash
   end
 end
